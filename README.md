@@ -1,5 +1,5 @@
 # activiti工作流通用引擎
-**项目负责人**：李倞 @lijing
+**项目负责人**：@lij
 
 **镜像**：hub.docker.dvt.io:5000/devops/activiti_workflow:latest
 
