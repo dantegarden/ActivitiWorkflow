@@ -1,0 +1,13 @@
+image: hub.docker.dvt.io:5000/devops/activiti_workflow:latest
+variables:
+   GIT_STRATEGY: none
+stages:
+   - build
+b1:
+  stage: build
+  script:
+    - "docker exec --user=tomcat awf  bash -c 'cd ~ && /bin/sh update.sh'"
+  tags:
+    - builder
+  only:
+    - master
